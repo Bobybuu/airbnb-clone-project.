@@ -164,3 +164,24 @@ A well-balanced software development team ensures the successful delivery of the
 > 💡 *Each role contributes unique expertise toward building a robust, scalable, and user-friendly Airbnb clone. Team synergy and role clarity are vital for delivering a successful software product.*
 
 ---
+---
+
+## 🧰 Technology Stack
+
+This project utilizes a modern and scalable technology stack designed to support the core functionalities of an Airbnb-like booking platform. Each tool was selected based on its strengths in performance, flexibility, and industry adoption.
+
+| Technology                        | Description & Purpose                                                                                                                                                                                |
+| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Django**                        | A high-level Python web framework used to build robust, secure, and scalable backend applications. It handles user authentication, admin management, ORM-based database access, and business logic.  |
+| **MySQL**                         | A relational database management system used to store structured data such as users, listings, bookings, and reviews. MySQL ensures data integrity and supports complex queries efficiently.         |
+| **GraphQL**                       | A query language for APIs that allows clients to request exactly the data they need. It provides flexible and efficient data communication between frontend and backend, replacing traditional REST. |
+| **Graphene-Django**               | A GraphQL library for Django that integrates GraphQL with Django models and views, enabling the creation of powerful and flexible GraphQL APIs on top of the Django ORM.                             |
+| **Docker** (Optional)             | A containerization tool used to package the application and its dependencies into isolated environments, ensuring consistent development and deployment across machines.                             |
+| **Git & GitHub**                  | Git is used for version control, and GitHub is the collaboration platform for code sharing, issue tracking, and pull request management.                                                             |
+| **GitHub Actions**                | A CI/CD tool integrated into GitHub that automates workflows such as testing, linting, and deployment. It supports rapid iteration and continuous delivery.                                          |
+| **Postman** or **Altair GraphQL** | Tools used to test GraphQL queries and mutations against the API. They aid in debugging and validating endpoint functionality during development.                                                    |
+
+---
+
+> 🧠 *This stack provides a comprehensive foundation for building scalable, maintainable, and modern web applications, combining Django’s reliability with GraphQL’s flexibility and MySQL’s performance.*
+
