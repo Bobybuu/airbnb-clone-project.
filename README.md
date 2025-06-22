@@ -185,3 +185,137 @@ This project utilizes a modern and scalable technology stack designed to support
 
 > 🧠 *This stack provides a comprehensive foundation for building scalable, maintainable, and modern web applications, combining Django’s reliability with GraphQL’s flexibility and MySQL’s performance.*
 
+---
+
+## 🗃️ Database Design
+
+The application is modeled using a relational database structure powered by **MySQL**, designed to reflect real-world Airbnb-like functionality. Below are the key entities and their relationships.
+
+### 🧑‍💼 Users
+
+**Description**: Represents both hosts and guests.
+
+**Key Fields**:
+
+* `id` (Primary Key)
+* `username` (Unique)
+* `email` (Unique)
+* `password_hash`
+* `is_host` (Boolean to differentiate between host and guest)
+
+**Relationships**:
+
+* A user can create **multiple properties**.
+* A user can make **multiple bookings**.
+* A user can write **multiple reviews**.
+
+---
+
+### 🏠 Properties
+
+**Description**: Listings created by hosts for rent.
+
+**Key Fields**:
+
+* `id` (Primary Key)
+* `title`
+* `description`
+* `location`
+* `price_per_night`
+* `host_id` (Foreign Key → Users)
+
+**Relationships**:
+
+* A property **belongs to one user** (host).
+* A property can have **multiple bookings**.
+* A property can receive **multiple reviews**.
+
+---
+
+### 📅 Bookings
+
+**Description**: Reservations made by guests for properties.
+
+**Key Fields**:
+
+* `id` (Primary Key)
+* `guest_id` (Foreign Key → Users)
+* `property_id` (Foreign Key → Properties)
+* `start_date`
+* `end_date`
+* `status` (e.g., confirmed, cancelled)
+
+**Relationships**:
+
+* A booking **belongs to one user** (guest).
+* A booking **belongs to one property**.
+
+---
+
+### ⭐ Reviews
+
+**Description**: Feedback left by users for properties they’ve stayed in.
+
+**Key Fields**:
+
+* `id` (Primary Key)
+* `user_id` (Foreign Key → Users)
+* `property_id` (Foreign Key → Properties)
+* `rating` (1–5 scale)
+* `comment`
+* `created_at`
+
+**Relationships**:
+
+* A review **belongs to one user**.
+* A review **belongs to one property**.
+
+---
+
+### 💳 Payments (Optional / Future Implementation)
+
+**Description**: Records of transactions for bookings.
+
+**Key Fields**:
+
+* `id` (Primary Key)
+* `booking_id` (Foreign Key → Bookings)
+* `amount`
+* `payment_method`
+* `status` (e.g., paid, failed)
+* `payment_date`
+
+**Relationships**:
+
+* A payment **belongs to one booking**.
+
+---
+
+### 🔗 Entity Relationships Overview
+
+* A **User** can:
+
+  * Host **many Properties**
+  * Make **many Bookings**
+  * Write **many Reviews**
+
+* A **Property** can:
+
+  * Be booked through **many Bookings**
+  * Receive **many Reviews**
+
+* A **Booking**:
+
+  * Is made by one **User**
+  * Is linked to one **Property**
+  * May have one **Payment** record
+
+* A **Review**:
+
+  * Is written by one **User**
+  * Is associated with one **Property**
+
+---
+
+> 🧠 *This normalized database structure ensures efficient data querying, avoids redundancy, and maintains data integrity for core booking and rental operations.*
+
