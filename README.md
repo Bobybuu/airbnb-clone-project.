@@ -376,3 +376,73 @@ Provides a backend interface for site administrators to manage users, properties
 ---
 
 > 💡 *These features collectively enable users to engage with the platform in a seamless, secure, and scalable way—mirroring the core functionality of Airbnb.*
+---
+
+## 🔐 API Security
+
+Securing backend APIs is critical in protecting sensitive user data, preventing abuse, and ensuring trust in the platform. Below are the key security measures implemented in the Airbnb Clone project and their significance.
+
+---
+
+### 🔑 Authentication
+
+**What It Does**:
+Implements secure login using JWT (JSON Web Tokens) to verify user identity across API requests.
+
+**Why It Matters**:
+Ensures that only legitimate users can access their own data and perform operations like booking or listing properties. Prevents unauthorized access and impersonation.
+
+---
+
+### 🛂 Authorization
+
+**What It Does**:
+Uses role-based access control (RBAC) to restrict what actions different users (e.g., hosts vs guests) can perform.
+
+**Why It Matters**:
+Protects platform integrity by ensuring, for example, that only hosts can manage properties, and only guests can make bookings or leave reviews.
+
+---
+
+### 📉 Rate Limiting
+
+**What It Does**:
+Limits the number of API requests from a single IP or user over a defined time period.
+
+**Why It Matters**:
+Helps prevent brute-force attacks, spamming of endpoints, and denial-of-service (DoS) attacks that could compromise platform availability.
+
+---
+
+### 🧼 Input Validation & Sanitization
+
+**What It Does**:
+Validates user input and removes potentially dangerous data before processing or storing it.
+
+**Why It Matters**:
+Prevents common attack vectors such as SQL injection, cross-site scripting (XSS), and malformed GraphQL queries.
+
+---
+
+### 🔒 Secure Data Transmission
+
+**What It Does**:
+Ensures all communication between the client and server occurs over HTTPS.
+
+**Why It Matters**:
+Protects data from being intercepted or tampered with during transmission, especially sensitive information like login credentials or payment data.
+
+---
+
+### 🕵️‍♀️ Logging & Monitoring
+
+**What It Does**:
+Tracks suspicious activities, failed login attempts, and unauthorized API access.
+
+**Why It Matters**:
+Allows early detection of threats and helps in auditing and forensic analysis during incidents.
+
+---
+
+> 🧠 *Strong API security ensures platform reliability, builds user trust, and protects the business from legal and reputational risks.*
+
