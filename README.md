@@ -54,3 +54,113 @@ To participate, learners should:
 > 🧠 *This project is designed not just to build skills—but to simulate real-world team collaboration and system design in a fast-paced, production-like environment.*
 
 ---
+---
+
+## 👥 Team Roles
+
+A well-balanced software development team ensures the successful delivery of the Airbnb Clone Project. Each member plays a critical role in shaping the product from concept to deployment.
+
+---
+
+### 🔍 Business Analyst (BA)
+
+**Responsibilities:**
+
+* Understand the business goals behind the Airbnb-like platform.
+* Gather, document, and translate client/stakeholder needs into detailed technical requirements.
+* Analyze workflows such as property listing, user bookings, payments, and feedback loops.
+* Bridge the gap between the product vision and technical implementation.
+
+---
+
+### 🧭 Product Owner (PO)
+
+**Responsibilities:**
+
+* Define and uphold the product vision, aligning it with user needs and market trends.
+* Prioritize features and manage the product backlog.
+* Ensure that what is being developed brings maximum value to end-users.
+* Make key decisions about feature scope and direction throughout the development lifecycle.
+
+---
+
+### 🗂️ Project Manager (PM)
+
+**Responsibilities:**
+
+* Organize project tasks, sprints, and timelines to ensure on-time delivery.
+* Facilitate communication between team members, resolve blockers, and monitor progress.
+* Manage budgets, team productivity, and ensure the team aligns with project goals.
+* Foster Agile practices and continuous improvement.
+
+---
+
+### 🎨 UI/UX Designer
+
+**Responsibilities:**
+
+* Design clean and intuitive user interfaces for renters and hosts.
+* Create user flows and wireframes for features like booking, listing properties, and leaving reviews.
+* Conduct usability testing and refine designs based on user feedback.
+* Ensure accessibility and responsiveness across devices.
+
+---
+
+### 🏗️ Software Architect
+
+**Responsibilities:**
+
+* Design the overall architecture of the Airbnb Clone using Django, MySQL, and GraphQL.
+* Choose tools, libraries, and patterns to ensure scalability, performance, and maintainability.
+* Define best practices and perform code reviews to enforce quality standards.
+* Plan how different modules (e.g., authentication, booking engine, payments) interact securely and efficiently.
+
+---
+
+### 👨‍💻 Software Developers
+
+**Responsibilities:**
+
+* **Back-end Developers:** Build core functionality such as user registration, property listings, booking logic, and GraphQL API development with Django.
+* **Full-stack Developers (if applicable):** Handle both the backend logic and frontend integration to ensure seamless data flow and user experience.
+* Write efficient, reusable, and well-documented code.
+* Collaborate with UI/UX designers and QA to implement and refine features.
+
+---
+
+### ✅ Quality Assurance (QA) Engineer
+
+**Responsibilities:**
+
+* Test both functional and non-functional aspects of the application (e.g., booking flow, login, cancellation policy).
+* Create detailed test plans, execute manual tests, and document issues.
+* Verify compliance with acceptance criteria and report defects.
+* Ensure application usability, performance, and security.
+
+---
+
+### 🤖 Test Automation Engineer
+
+**Responsibilities:**
+
+* Develop and maintain automated test scripts for recurring testing scenarios (e.g., login, CRUD operations).
+* Create a robust test automation framework for regression and continuous testing.
+* Decide which parts of the application are best suited for automation.
+* Integrate test suites into the CI/CD pipeline for faster feedback.
+
+---
+
+### 🔧 DevOps Engineer
+
+**Responsibilities:**
+
+* Set up and manage CI/CD pipelines using tools like GitHub Actions and Docker.
+* Ensure reliable deployments to development, staging, and production environments.
+* Monitor system performance, automate builds/tests, and manage rollbacks.
+* Enforce security, scalability, and high availability in the delivery process.
+
+---
+
+> 💡 *Each role contributes unique expertise toward building a robust, scalable, and user-friendly Airbnb clone. Team synergy and role clarity are vital for delivering a successful software product.*
+
+---
