@@ -446,3 +446,33 @@ Allows early detection of threats and helps in auditing and forensic analysis du
 
 > 🧠 *Strong API security ensures platform reliability, builds user trust, and protects the business from legal and reputational risks.*
 
+---
+
+## 🔄 CI/CD Pipeline
+
+**CI/CD** stands for **Continuous Integration** and **Continuous Deployment/Delivery**. It is a set of automated processes that help developers build, test, and deploy code more efficiently and reliably.
+
+---
+
+### 🚀 Why CI/CD Matters
+
+Implementing a CI/CD pipeline ensures that:
+
+* Code changes are **automatically tested and validated** before merging into the main branch.
+* **Bugs and security issues** are detected early in the development cycle.
+* New features can be **safely and consistently deployed** to staging or production environments.
+* It promotes **developer productivity**, faster feedback loops, and higher product stability.
+
+In the context of the Airbnb Clone, CI/CD pipelines allow seamless deployment of new features like booking, listing updates, or API changes without manual intervention—minimizing downtime and human error.
+
+---
+
+### 🛠️ Tools Used
+
+* **GitHub Actions**: Automates workflows such as running tests, linting code, and deploying updates when changes are pushed to the repository.
+* **Docker**: Provides consistent environments for development, testing, and deployment by containerizing the application and its dependencies.
+* **(Optional) Docker Hub / AWS / Heroku**: For deploying the Dockerized application to cloud platforms.
+
+---
+
+> 🧠 *CI/CD turns your development workflow into a repeatable, automated process—freeing up your team to focus on building features instead of managing environments.*
